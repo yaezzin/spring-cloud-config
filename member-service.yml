@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:testdb
+    username: sa
+    #password: '{cipher}b63e59841f711772621524bc710abb4aed474e2a369371af0f4acbe9a53cadef' #암호화된 문자!
+    password: '{cipher}AQBt3rxAOdZBzm6x3zYcIodGf5kHLk8H47QPi2XFHUQsXwA3U2v92l6U7XfB4j9b7sf/wWlQCaxEL+gvsWIs4c0HAKDhUausHqvu9DFLfR92ZvAxr1IbFN35tyw1QbS2N5TD6UOvjm/zi8QYLF0tPXDjsXUqEggwJ847T0Nw9HjTS5EnHY2iTbnkaz7bD7qYypF81Pt85sDAcMLHWo8OuwH9gWgHwQ9E9bcvHpx56v3kvC6yQ0dbDU11KF9Sbi1WTbhzGTXIWifAkPNGaybpkjK63lA5BWrOyeKCUVVs7sJEx/+8t68EUPKN8RsJvhHHt9sVVo5uZsCIVXmvFTPrqJZw7Jc/gjZelhjYY+4cCctT3LfaXXN4p0CxMu2KACNyRjM='
+
+token:
+  secret: c3ByaW5nLWJvb3Qtc2VjdXJpdHktand0LXR1dG9yaWFsLWppd29vbi1zcHJpbmctYm9vdC1zZWN1cml0eS1qd3QtdHV0b3JpYWwK
+  expiration: 86400000
+
+order_service:
+  url: http://ORDER-SERVICE/order-service/%s/orders

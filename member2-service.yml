@@ -1,0 +1,10 @@
+token:
+  expiration: 86400000
+  secret: c3ByaW5nLWJvb3Qtc2VjdXJpdHktand0LXR1dG9yaWFsLWppd29vbi1zcHJpbmctYm9vdC1zZWN1cml0eS1qd3QtdHV0b3JpYWwK
+
+spring:
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver #org.h2.Driver
+    url: jdbc:mysql://localhost:3306/ecommerce?useSSL=false #jdbc:h2:mem:mydb #testdb
+    username: root #sa
+    password: A1b2c347 #'{cipher}4f1024c2d676ef045e9281baae572319e68ef20162e2369a20c70f232c87b24e'
